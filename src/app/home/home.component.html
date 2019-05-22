@@ -1,0 +1,10 @@
+<div class="col-lg-3 col-sm-3 col-md-3 col-xs-3" style="background-color: cyan">
+  <ul *ngFor="let product of productCategory">
+    <li (click)="onProductClick(product.id)">
+      {{product.name}}
+    </li>
+  </ul>
+</div>
+<div class="col-lg-9 col-sm-9 col-md-9 col-xs-9" style="background-color: orange">
+    <router-outlet></router-outlet>
+  RIght side content comes here</div>

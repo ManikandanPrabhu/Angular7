@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-xs-12 col-md-offset-4 col-sm-offset-3">
+      <div class="bslf form">
+          <h2 class="text-center">Please login</h2>       
+          <div class="form-group">
+             <input type="text" class="form-control" [(ngModel)]="username" placeholder="Username" required="required">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" [(ngModel)]="password" placeholder="Password" required="required">
+          </div>
+          <div class="form-group clearfix">
+            <label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label>
+            <button (click)="loginUser()" class="btn btn-primary pull-right">Log in</button>
+          </div>
+          <div class="clearfix">
+            <a href="forgot-password.html" class="pull-left">Forgot Password?</a>
+            <a href="registration.html" class="pull-right">Create an Account</a>
+          </div>        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="navbar-default navbar-fixed-bottom">
+  <div class="text-center footer">Copyright © 2019 Food World. All Right Reserved.</div>
+</div>
